@@ -20,7 +20,6 @@ Alpine's Docker repository for local Alpine-based developments. Nginx and sincor
 
 ### Usage
 #### Build 
-
 Run this on top level
 ```
 docker-compose build
@@ -36,3 +35,8 @@ docker-compose up -d #detached
 docker exec -it repoalpine sh #repoalpine or hostanme used
 ```
 
+## Collaboration
+Feel free to upload an upgrade by making a pull request. :heart: 
+
+## License 
+[MIT LIcense](https://gitlab.castris.com/root/alpine-mirror/-/blob/master/LICENSE)
