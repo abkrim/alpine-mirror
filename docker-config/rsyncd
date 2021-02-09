@@ -1,0 +1,1 @@
+RSYNC_OPTS="--bwlimit=250"

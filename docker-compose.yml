@@ -1,0 +1,35 @@
+# Docker Compose YAML file for lighttpd
+
+# build with:
+# $ sudo docker-compose build
+
+# start with:
+# $ sudo docker-compose up
+
+# after start, enter shell with:
+# $ sudo docker exec -it lighttpddocker_lighttpd_1 ash
+
+version: "3.8"
+
+networks:
+  frontend:
+    name: frontend
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.0.0/16
+services:
+  web:
+    container_name: repoalpine
+    hostname: 'repoalpine'
+    networks:
+      frontend:
+        ipv4_address: 172.20.0.254
+    volumes:
+      -  /backup5t/mirror/alpine:/var/www/repo
+    build: .
+    restart: always
+    ports:
+      - "8001:80"
+
+

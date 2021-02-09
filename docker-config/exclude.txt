@@ -1,0 +1,13 @@
+v2.*/
+v3.?/
+v3.10/
+v3.11/
+v3.12/
+edge/
+armv7/
+x86/
+aarch64/
+armhf/
+ppc64le/
+s390x/
+mips64/
