@@ -1,5 +1,3 @@
-# Dockerfile for create Apline Repo based in Lighttpd
-# Idea from https://github.com/spujadas/lighttpd-docker/
 FROM alpine:3.13
 
 LABEL maintainer="Abdelkarim Mateos abdelkarim.mateos@castris.com" \

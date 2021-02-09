@@ -35,8 +35,8 @@ docker-compose up -d #detached
 docker exec -it repoalpine sh #repoalpine or hostanme used
 ```
 
-## Collaboration
+## Contributing
 Feel free to upload an upgrade by making a pull request. :heart: 
 
 ## License 
-[MIT LIcense](https://gitlab.castris.com/root/alpine-mirror/-/blob/master/LICENSE)
+[MIT License](https://gitlab.castris.com/root/alpine-mirror/-/blob/master/LICENSE)
