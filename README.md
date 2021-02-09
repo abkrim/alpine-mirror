@@ -1,5 +1,5 @@
 # Alpine local repository with docker
-Alpine's Docker repository for local Alpine-based developments. Nginx and sincorinzación on external volume
+Alpine's Docker repository for local Alpine-based developments. Nginx and synchronization on external volume
 
 * Built on the lightweight and secure Alpine Linux distribution
 * Small docker image size
