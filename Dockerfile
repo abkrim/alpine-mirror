@@ -4,7 +4,7 @@ LABEL maintainer="Abdelkarim Mateos abdelkarim.mateos@castris.com" \
     description="Docker image for rsync automatic updating of Alpine repository" \
     version="0.0.1"
 
-RUN apk add --update --no-cache \
+RUN apk add --update \
     nginx rsync openssh bash supervisor tzdata && \
     rm /etc/nginx/conf.d/default.conf && rm -rf /var/cache/apk/*
 
@@ -37,8 +37,9 @@ COPY --chown=nobody . /var/www/repo/
 # Expose the port nginx is reachable on
 EXPOSE 80
 
-
-CMD ["crond", "-f", "-d", "6"]
+# https://gist.github.com/martinrusev/7015e393d46647dbad15
+# Supervised
+# CMD ["crond", "-f", "-d", "6"]
 
 # Let supervisord start nginx & php-fpm
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]

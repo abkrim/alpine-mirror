@@ -22,7 +22,8 @@ Alpine's Docker repository for local Alpine-based developments. Nginx and synchr
 #### Build 
 Run this on top level
 ```
-docker-compose build
+docker-compose build # or
+COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose build # Cached
 ```
 #### Run
 ```
