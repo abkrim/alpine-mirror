@@ -8,3 +8,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [1.0.0]
 ### Fixed
 - Test on local, verify work fine
+### [1.0.1] - 2021-02-11
+- Change crond to supervisord and testing
